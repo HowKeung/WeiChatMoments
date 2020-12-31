@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageAvatar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/imageAvatar"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="1233"
+            android:textColor="#5d6780"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textName"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/imageAvatar"
+            android:text="123123123132132132132132132132132132132132132131313"
+            android:textColor="#1a1a1a"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textContent"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/imageAvatar"
+            android:text="全文"
+            android:textColor="#5d6780"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/imageContent"
+            android:layout_width="120dp"
+            android:layout_height="176dp"
+            android:layout_below="@+id/textMore"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/imageAvatar"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textTime"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_below="@+id/imageContent"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/imageAvatar"
+            android:text="9小时前"
+            android:textColor="#7a7a7a"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textComment"
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_below="@+id/imageContent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="#f8f8f8"
+            android:gravity="center"
+            android:text="···"
+            android:textSize="14sp" />
+
+        <com.keung.weichat.widget.ListViewForScrollView
+            android:id="@+id/listComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textTime"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@+id/imageAvatar"
+            android:background="#f8f8f8"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="2dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/listComment"
+            android:layout_marginTop="15dp"
+            android:background="#f2f2f2" />
+    </RelativeLayout>
+</layout>
